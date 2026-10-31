@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thea KimSour - Telecommunication and Networking Engineering Portfolio">
+    <title>Thea KimSour | Network Engineering & Systems</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Glow & Grid Canvas -->
+    <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+    <!-- Command Header -->
+    <header class="cmd-header" id="header">
+        <div class="container header-flex">
+            <div class="cmd-prompt">
+                <span class="user">kimsour</span><span class="at">@</span><span class="host">telecom-core</span><span
+                    class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+                <span class="cursor-blink">_</span>
+            </div>
+
+            <nav class="cmd-nav" id="cmd-nav">
+                <a href="#about" class="nav-btn"><span class="cmd-num">01.</span>//about</a>
+                <a href="#education" class="nav-btn"><span class="cmd-num">02.</span>//edu</a>
+                <a href="#skills" class="nav-btn"><span class="cmd-num">03.</span>//skills</a>
+                <a href="#projects" class="nav-btn"><span class="cmd-num">04.</span>//projects</a>
+                <a href="#certs" class="nav-btn"><span class="cmd-num">05.</span>//certs</a>
+                <a href="#contact" class="nav-btn"><span class="cmd-num">06.</span>//ping</a>
+            </nav>
+
+            <div class="header-tools">
+                <button id="theme-btn" class="tool-btn" aria-label="Toggle Theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Terminal Section -->
+        <section class="section hero-sec" id="hero">
+            <div class="container hero-grid">
+                <!-- Bio Card with Profile Photo -->
+                <div class="hero-intro-card bento-card">
+                    <div class="card-status-bar">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">HOST: ACTIVE • LATENCY: 12ms</span>
+                    </div>
+
+                    <div class="hero-profile-container">
+                        <div class="hero-photo-frame">
+                            <img src="profile.jpg" alt="Thea KimSour" class="hero-portrait"
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80';">
+                            <div class="photo-glow-ring"></div>
+                        </div>
+
+                        <div class="hero-heading-block">
+                            <h1 class="glitch-title">Thea KimSour</h1>
+                            <h2 class="sub-designation">&gt; Telecommunication & Networking Engineering Student</h2>
+                        </div>
+                    </div>
+
+                    <p class="hero-statement">
+                        Passionate about technology, networking, programming, and continuous learning. Focused on
+                        building the foundations to support my future career across network infrastructure, hardware,
+                        and scalable software systems.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-val">Grade A</span>
+                            <span class="stat-key">Cambodia Bac II Honors</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">ACE GEP 11B</span>
+                            <span class="stat-key">English Upper-Int (CEFR B2+)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">CCNA / IT</span>
+                            <span class="stat-key">Cisco Foundations</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-row">
+                        <a href="#contact" class="cyber-btn primary-btn">
+                            <span>INITIALIZE_CONTACT</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#projects" class="cyber-btn ghost-btn">
+                            <span>EXPLORE_BUILDS</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Terminal Simulator -->
+                <div class="terminal-card bento-card">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">kimsour@session-node-01: /etc/init</span>
+                    </div>
+                    <div class="terminal-body" id="term-body">
+                        <p class="term-line"><span class="cmd-accent">[SYS-INIT]</span> Loading routing table and
+                            personality modules...</p>
+                        <p class="term-line"><span class="cmd-accent">[IDENTITY]</span> Name: Thea KimSour</p>
+                        <p class="term-line"><span class="cmd-accent">[LANG-STD]</span> English: GEP 11B (ACE) //
+                            Professional Working Proficiency</p>
+                        <p class="term-line"><span class="cmd-accent">[FOCUS]</span> IP Networking, Routing, Hardware
+                            Support, Python</p>
+                        <p class="term-line"><span class="cmd-green">[OK]</span> Interface eth0 connected (1000BASE-T
+                            Full-Duplex)</p>
+                        <p class="term-line prompt-line">
+                            <span class="term-prompt">$</span>
+                            <span class="term-typing" id="typed-output"></span><span class="cursor-inline">|</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Overview / About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-tag">// 01. ARCHITECTURE_&amp;_PROFILE</div>
+
+                <div class="about-bento-grid">
+                    <div class="bento-card bento-span-2">
+                        <h3 class="bento-title">&gt; Profile Overview</h3>
+                        <p class="bento-p">
+                            I am a dedicated Telecommunication and Networking Engineering student driven by how physical
+                            infrastructure transforms into real-time global connectivity. From packet transmission
+                            across Ethernet topologies to high-level algorithmic logic, I focus on building robust
+                            problem-solving frameworks for modern systems with strong bilingual communication
+                            capability.
+                        </p>
+                        <div class="feature-pills">
+                            <span class="pill">Cisco Packet Tracer</span>
+                            <span class="pill">Ethernet &amp; IP Topologies</span>
+                            <span class="pill">Hardware Diagnostics</span>
+                            <span class="pill">ACE GEP 11B English </span>
+                            <span class="pill">Technical Documentation</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-card">
+                        <h3 class="bento-title">&gt; Academic Honor</h3>
+                        <div class="honor-highlight">
+                            <span class="gold-badge">GRADE 'A'</span>
+                            <p>Recognized among Cambodia's Grade A National High School Examination (Bac II) Recipients.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-span-3 ping-widget">
+                        <div class="widget-header">
+                            <span class="terminal-title">DIAGNOSTIC TEST // PING_SYSTEM</span>
+                            <span class="tag-status">ONLINE</span>
+                        </div>
+                        <div class="widget-controls">
+                            <input type="text" id="ping-target" value="8.8.8.8 (Gateway DNS)" readonly>
+                            <button id="run-ping-btn" class="cyber-btn sm-btn">EXECUTE ICMP</button>
+                        </div>
+                        <div class="widget-log" id="ping-output">Click "EXECUTE ICMP" to test latency simulation to
+                            network node...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-tag">// 02. SYSTEM_RECORD_EDUCATION</div>
+
+                <div class="edu-bento-grid">
+                    <div class="bento-card">
+                        <div class="bento-badge">2025 - PRESENT</div>
+                        <h3 class="bento-title">Bachelor of Telecommunication &amp; Networking</h3>
+                        <span class="entity-sub">Engineering Faculty // Undergraduate Program</span>
+
+                        <p class="bento-p">In-depth study of signals, protocols, computer architecture, and systemic
+                            data paths.</p>
+
+                        <div class="spec-label">MODULES REGISTERED:</div>
+                        <div class="tech-tag-row">
+                            <span class="tech-tag">Computer Networks</span>
+                            <span class="tech-tag">Programming Fundamentals</span>
+                            <span class="tech-tag">Mathematics</span>
+                            <span class="tech-tag">Digital Logic Design</span>
+                            <span class="tech-tag">Physics</span>
+                            <span class="tech-tag">Network Fundamentals</span>
+                        </div>
+                    </div>
+
+                    <div class="bento-card">
+                        <div class="bento-badge">2020 - 2025</div>
+                        <h3 class="bento-title">Sok An Tonloab High School</h3>
+                        <span class="entity-sub">Secondary Diploma // STEM Focus</span>
+
+                        <p class="bento-p">Rigorous secondary foundation in scientific inquiry, analytical calculus,
+                            physics, and leadership.</p>
+
+                        <div class="spec-label">HONORARY DISTINCTION:</div>
+                        <div class="alert-box">
+                            <span class="alert-icon">✦</span>
+                            <span>National Grade A Bac II Recipient — Top tier academic national standing.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Stack & Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-tag">// 03. COMPILATION_STACK_&amp;_SKILLS</div>
+
+                <div class="skills-layout">
+                    <div class="bento-card">
+                        <h3 class="bento-title">&gt; Infrastructure &amp; Language Meters</h3>
+
+                        <div class="skill-meter-group">
+                            <div class="meter-item">
+                                <div class="meter-info">
+                                    <span>Computer Networking &amp; IP Technologies</span>
+                                    <span class="code-val">90%</span>
+                                </div>
+                                <div class="meter-bar">
+                                    <div class="fill" style="--val: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="meter-item">
+                                <div class="meter-info">
+                                    <span>Ethernet &amp; Network Hardware Support</span>
+                                    <span class="code-val">88%</span>
+                                </div>
+                                <div class="meter-bar">
+                                    <div class="fill" style="--val: 88%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="meter-item">
+                                <div class="meter-info">
+                                    <span>English Proficiency (ACE GEP 11B • CEFR B2+)</span>
+                                    <span class="code-val">86%</span>
+                                </div>
+                                <div class="meter-bar">
+                                    <div class="fill" style="--val: 86%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="meter-item">
+                                <div class="meter-info">
+                                    <span>Network Troubleshooting &amp; CCNA Concepts</span>
+                                    <span class="code-val">85%</span>
+                                </div>
+                                <div class="meter-bar">
+                                    <div class="fill" style="--val: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="meter-item">
+                                <div class="meter-info">
+                                    <span>Programming (C, Python, HTML/CSS)</span>
+                                    <span class="code-val">82%</span>
+                                </div>
+                                <div class="meter-bar">
+                                    <div class="fill" style="--val: 82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card">
+                        <h3 class="bento-title">&gt; Capability Categorization</h3>
+
+                        <div class="stack-matrix">
+                            <div class="matrix-cell">
+                                <span class="matrix-head">[01] PROTOCOLS</span>
+                                <p>TCP/IP, Ethernet IEEE 802.3, Subnetting, IPv4/IPv6, Network Diagnostics &amp;
+                                    Troubleshooting</p>
+                            </div>
+                            <div class="matrix-cell">
+                                <span class="matrix-head">[02] HARDWARE</span>
+                                <p>Switches, Routers, Patch Panels, Diagnostic Wiring, Motherboard &amp; Peripheral
+                                    Support</p>
+                            </div>
+                            <div class="matrix-cell">
+                                <span class="matrix-head">[03] CODE &amp; OS</span>
+                                <p>C, Python, HTML5, CSS3, Windows Workstations, Operating Systems</p>
+                            </div>
+                            <div class="matrix-cell">
+                                <span class="matrix-head">[04] ENGLISH &amp; SOFT SKILLS</span>
+                                <p>ACE GEP 11B ( IELTS ~6.0-6.5 eq.), Technical Writing, Pitching, Research
+                                    Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-tag">// 04. PRODUCTION_RUNS_&amp;_BUILDS</div>
+
+                <div class="projects-bento">
+                    <article class="bento-card project-panel">
+                        <div class="project-header">
+                            <div class="term-index">PROJECT://001</div>
+                            <span class="status-pill green">PROTOTYPE_PITCHED</span>
+                        </div>
+
+                        <h3 class="project-headline">UniMate — AI In Education Companion</h3>
+                        <p class="project-abstract">
+                            Developed as part of the Innovation Challenge Program. Proposed and engineered an Artificial
+                            Intelligence-driven companion for higher education students to solve information access
+                            friction, personalize study schedules, and increase retention.
+                        </p>
+
+                        <div class="key-deliverables">
+                            <span class="label">EXECUTION PHASES:</span>
+                            <ul>
+                                <li>Conducted domain research identifying operational academic roadblocks.</li>
+                                <li>Engineered and presented live prototype during competitive pitching sessions.</li>
+                                <li>Applied rapid prototyping, UX considerations, and system workflow modeling.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Artificial Intelligence</span>
+                            <span class="tag">UI Prototyping</span>
+                            <span class="tag">Innovation Challenge</span>
+                        </div>
+                    </article>
+
+                    <article class="bento-card project-panel">
+                        <div class="project-header">
+                            <div class="term-index">PROJECT://002</div>
+                            <span class="status-pill cyan">STUDY_DELIVERED</span>
+                        </div>
+
+                        <h3 class="project-headline">Greener Campus — Bus Transit Initiative</h3>
+                        <p class="project-abstract">
+                            A comprehensive analytical and field-research project tackling campus carbon footprint,
+                            traffic saturation, and the diminishing of recreational green spaces across student
+                            environments.
+                        </p>
+
+                        <div class="key-deliverables">
+                            <span class="label">EXECUTION PHASES:</span>
+                            <ul>
+                                <li>Gathered traffic data highlighting vehicle footprint across high-density facilities.
+                                </li>
+                                <li>Formulated an integrated bus transit schedule to mitigate congestion.</li>
+                                <li>Structured final slide deck and presented findings to faculty and student peers.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tags">
+                            <span class="tag">Sustainable Mobility</span>
+                            <span class="tag">Field Research</span>
+                            <span class="tag">Critical Problem Solving</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section" id="certs">
+            <div class="container">
+                <div class="section-tag">// 05. AUTHENTICATED_CREDENTIALS</div>
+
+                <div class="cert-grid-cyber">
+                    <div class="bento-card cert-item">
+                        <div class="cert-sigil">01</div>
+                        <div>
+                            <h4 class="cert-title">Cisco IT Essentials</h4>
+                            <p class="cert-desc">Hardware Diagnostics, System Support &amp; Configuration</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card cert-item">
+                        <div class="cert-sigil">02</div>
+                        <div>
+                            <h4 class="cert-title">CCNA Fundamentals</h4>
+                            <p class="cert-desc">IP Routing, Switching, Subnet Design, Topologies</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card cert-item">
+                        <div class="cert-sigil">03</div>
+                        <div>
+                            <h4 class="cert-title">ACE English GEP 11B</h4>
+                            <p class="cert-desc">Australian Centre for Education • (Upper-Intermediate)</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-card cert-item">
+                        <div class="cert-sigil">04</div>
+                        <div>
+                            <h4 class="cert-title">National Grade A Bac II</h4>
+                            <p class="cert-desc">Ministry of Education, Youth and Sport</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Ping Interface -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-tag">// 06. TRANSMISSION_CHANNEL</div>
+
+                <div class="contact-terminal bento-card">
+                    <div class="contact-intro">
+                        <h3 class="bento-title">&gt; Open Direct Communication</h3>
+                        <p class="bento-p">
+                            Direct your transmission payload below for academic inquiries, network projects, or
+                            engineering collaborations.
+                        </p>
+
+                        <div class="contact-payloads">
+                            <div class="payload-box">
+                                <span class="p-label">PHONE_INTERFACE:</span>
+                                <a href="tel:092713514" class="p-value">092 713514</a>
+                            </div>
+                            <div class="payload-box">
+                                <span class="p-label">EMAIL_STREAM:</span>
+                                <a href="mailto:theakimsour08@gmail.com" class="p-value">theakimsour08@gmail.com</a>
+                            </div>
+                            <div class="payload-box">
+                                <span class="p-label">NODE_GEOGRAPHY:</span>
+                                <span class="p-value">Cambodia (UTC+7) // Open to Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Area -->
+                    <form class="cyber-form" id="contact-form" novalidate>
+                        <div class="form-grid">
+                            <div class="input-block">
+                                <label for="fname">&gt; FIRST_NAME *</label>
+                                <input type="text" id="fname" placeholder="First name" required>
+                                <span class="field-error">Input required</span>
+                            </div>
+                            <div class="input-block">
+                                <label for="lname">&gt; LAST_NAME</label>
+                                <input type="text" id="lname" placeholder="Last name">
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="input-block">
+                                <label for="email">&gt; EMAIL_ADDRESS *</label>
+                                <input type="email" id="email" placeholder="client@node.com" required>
+                                <span class="field-error">Valid email address required</span>
+                            </div>
+                            <div class="input-block">
+                                <label for="subject">&gt; PACKET_SUBJECT</label>
+                                <input type="text" id="subject" placeholder="Project or Opportunity">
+                            </div>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="message">&gt; PAYLOAD_BODY *</label>
+                            <textarea id="message" rows="4" placeholder="Transmit your message parameters..."
+                                required></textarea>
+                            <span class="field-error">Message body must be 10+ characters</span>
+                        </div>
+
+                        <button type="submit" class="cyber-btn primary-btn full-width" id="form-submit">
+                            <span>DISPATCH_MESSAGE</span>
+                        </button>
+
+                        <div id="form-log" class="form-log-status" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cmd-footer">
+        <div class="container footer-flex">
+            <div class="footer-left">
+                <span class="prompt-sym">#</span> THEA_KIMSOUR // TELECOM &amp; NETWORK SYS
+            </div>
+            <div class="footer-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="year"></span> Thea KimSour. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
